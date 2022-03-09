@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+#wrapp {
+    margin: 10px auto;
+    width: 65%;
+}
+h1 {
+    font-weight: 400;
+}
+img {
+    background-color: #6ba2d9;
+    vertical-align: bottom;
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tile {
+    margin-bottom: 15px;
+}
+.thumb-images p {
+    background-color: #faf7ff;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media screen and (min-width: 766px) and (max-width: 1024px) {
+    #wrapp {
+        width: 80%;
+    }
+
+    .thumb-images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .tile {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #wrapp {
+        width: 960px;
+    }
+    .thumb-images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .tile {
+        flex-basis: 17%;
+        margin-bottom: 30px;
+    }
+}
