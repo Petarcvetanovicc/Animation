@@ -1,0 +1,51 @@
+@keyframes primer {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background: #050210
+}
+
+#wrapp2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 100px auto;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation: 1s primer infinite linear;
+}
+    
+#wrapp2:before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation: 1s primer infinite linear;
+    filter: blur(30px);
+}
+    
+#wrapp2:after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: black;
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
